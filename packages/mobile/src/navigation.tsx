@@ -106,6 +106,7 @@ import {
 import {
   OsmosisWebpageScreen,
   StargazeWebpageScreen,
+  IONWebpageScreen,
 } from "./screens/web/webpages";
 import { WebpageScreenScreenOptionsPreset } from "./screens/web/components/webpage-screen";
 import Bugsnag from "@bugsnag/react-native";
@@ -230,6 +231,9 @@ const {
       upperScreenName: "Web",
     },
     "Web.Stargaze": {
+      upperScreenName: "Web",
+    },
+    "Web.ION" : {
       upperScreenName: "Web",
     },
   }).withParams<{
@@ -768,6 +772,7 @@ export const WebNavigation: FunctionComponent = () => {
       />
       <Stack.Screen name="Web.Osmosis" component={OsmosisWebpageScreen} />
       <Stack.Screen name="Web.Stargaze" component={StargazeWebpageScreen} />
+      <Stack.Screen name="Web.ION" component={IONWebpageScreen} />
     </Stack.Navigator>
   );
 };
