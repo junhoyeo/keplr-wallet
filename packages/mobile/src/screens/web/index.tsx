@@ -55,6 +55,13 @@ export const WebScreen: FunctionComponent = () => {
         }}
       />
       <WebpageImageButton
+        name="ION"
+        source={require("../../assets/image/webpage/ion.png")}
+        onPress={() => {
+          smartNavigation.pushSmart("Web.ION", {});
+        }}
+      />
+      <WebpageImageButton
         overrideInner={
           <View style={style.flatten(["flex-1", "items-center"])}>
             <Text
